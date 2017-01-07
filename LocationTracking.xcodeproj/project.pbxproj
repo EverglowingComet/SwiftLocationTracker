@@ -16,6 +16,11 @@
 		F3687ECD1E20B2E3009D1E0B /* LocationTrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3687ECC1E20B2E3009D1E0B /* LocationTrackingTests.swift */; };
 		F3687EDD1E20B8B5009D1E0B /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3687EDC1E20B8B5009D1E0B /* TabViewController.swift */; };
 		F3687EDF1E20B97C009D1E0B /* TabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3687EDE1E20B97C009D1E0B /* TabViewModel.swift */; };
+		F3687EE11E20C7FA009D1E0B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3687EE01E20C7FA009D1E0B /* FirstViewController.swift */; };
+		F3687EE31E20C807009D1E0B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3687EE21E20C807009D1E0B /* SecondViewController.swift */; };
+		F3687EE51E20C812009D1E0B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3687EE41E20C812009D1E0B /* ThirdViewController.swift */; };
+		F3687EE71E20E62B009D1E0B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3687EE61E20E62B009D1E0B /* CoreLocation.framework */; };
+		F3687EE91E20E630009D1E0B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3687EE81E20E630009D1E0B /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		F3687ECE1E20B2E3009D1E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3687EDC1E20B8B5009D1E0B /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		F3687EDE1E20B97C009D1E0B /* TabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewModel.swift; sourceTree = "<group>"; };
+		F3687EE01E20C7FA009D1E0B /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F3687EE21E20C807009D1E0B /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F3687EE41E20C812009D1E0B /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		F3687EE61E20E62B009D1E0B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F3687EE81E20E630009D1E0B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3687EE91E20E630009D1E0B /* MapKit.framework in Frameworks */,
+				F3687EE71E20E62B009D1E0B /* CoreLocation.framework in Frameworks */,
 				60A3EA308C38D558E5BDCE9A /* Pods_LocationTracking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +83,8 @@
 		48EA4231CF33AD54D6C20192 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3687EE81E20E630009D1E0B /* MapKit.framework */,
+				F3687EE61E20E62B009D1E0B /* CoreLocation.framework */,
 				508738D11D9E38388A991B0A /* Pods_LocationTracking.framework */,
 				C23AAF224A48A1D528E4C014 /* Pods_LocationTrackingTests.framework */,
 			);
@@ -135,6 +149,9 @@
 			isa = PBXGroup;
 			children = (
 				F3687EDC1E20B8B5009D1E0B /* TabViewController.swift */,
+				F3687EE01E20C7FA009D1E0B /* FirstViewController.swift */,
+				F3687EE21E20C807009D1E0B /* SecondViewController.swift */,
+				F3687EE41E20C812009D1E0B /* ThirdViewController.swift */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -352,6 +369,9 @@
 				F3687EDD1E20B8B5009D1E0B /* TabViewController.swift in Sources */,
 				F3687EDF1E20B97C009D1E0B /* TabViewModel.swift in Sources */,
 				F3687EB81E20B2E3009D1E0B /* AppDelegate.swift in Sources */,
+				F3687EE31E20C807009D1E0B /* SecondViewController.swift in Sources */,
+				F3687EE51E20C812009D1E0B /* ThirdViewController.swift in Sources */,
+				F3687EE11E20C7FA009D1E0B /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +434,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bai Jin Zhin (FU9SD2G4V7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bai Jin Zhin (FU9SD2G4V7)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -436,6 +457,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "1509eb80-8f56-4eec-8872-5c9fe51e6e8c";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -463,7 +485,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bai Jin Zhin (FU9SD2G4V7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bai Jin Zhin (FU9SD2G4V7)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -478,6 +501,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "1509eb80-8f56-4eec-8872-5c9fe51e6e8c";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -494,6 +518,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LocationTracking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1509eb80-8f56-4eec-8872-5c9fe51e6e8c";
+				PROVISIONING_PROFILE_SPECIFIER = "Dev Provision";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -508,6 +534,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LocationTracking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1509eb80-8f56-4eec-8872-5c9fe51e6e8c";
+				PROVISIONING_PROFILE_SPECIFIER = "Dev Provision";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

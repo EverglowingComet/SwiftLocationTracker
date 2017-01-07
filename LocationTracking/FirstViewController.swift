@@ -1,5 +1,5 @@
 //
-//  TabViewController.swift
+//  FirstViewController.swift
 //  LocationTracking
 //
 //  Created by Com on 07/01/2017.
@@ -8,16 +8,15 @@
 
 import UIKit
 
-class TabViewController: UITabBarController {
+class FirstViewController: UIViewController {
 	
-	var viewModel = TabViewModel()
-	
+	@IBOutlet weak var lblLocation: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-		viewModel.startLocationTracking()
+		(self.parent as! TabViewController).viewModel.showLocation = { [weak self] in return self?.showLocation }()
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +24,10 @@ class TabViewController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
 	
+	func showLocation(address: String) {
+		lblLocation.text = address
+	}
+    
 
     /*
     // MARK: - Navigation

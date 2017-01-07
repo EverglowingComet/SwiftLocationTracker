@@ -1,5 +1,5 @@
 //
-//  TabViewController.swift
+//  SecondViewController.swift
 //  LocationTracking
 //
 //  Created by Com on 07/01/2017.
@@ -8,23 +8,19 @@
 
 import UIKit
 
-class TabViewController: UITabBarController {
-	
-	var viewModel = TabViewModel()
-	
+class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-		viewModel.startLocationTracking()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-	
+    
 
     /*
     // MARK: - Navigation
