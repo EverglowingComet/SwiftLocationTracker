@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		F3687EB81E20B2E3009D1E0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3687EB71E20B2E3009D1E0B /* AppDelegate.swift */; };
-		F3687EBA1E20B2E3009D1E0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3687EB91E20B2E3009D1E0B /* ViewController.swift */; };
 		F3687EBD1E20B2E3009D1E0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3687EBB1E20B2E3009D1E0B /* Main.storyboard */; };
 		F3687EBF1E20B2E3009D1E0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3687EBE1E20B2E3009D1E0B /* Assets.xcassets */; };
 		F3687EC21E20B2E3009D1E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3687EC01E20B2E3009D1E0B /* LaunchScreen.storyboard */; };
 		F3687ECD1E20B2E3009D1E0B /* LocationTrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3687ECC1E20B2E3009D1E0B /* LocationTrackingTests.swift */; };
+		F3687EDD1E20B8B5009D1E0B /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3687EDC1E20B8B5009D1E0B /* TabViewController.swift */; };
+		F3687EDF1E20B97C009D1E0B /* TabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3687EDE1E20B97C009D1E0B /* TabViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,6 @@
 /* Begin PBXFileReference section */
 		F3687EB41E20B2E3009D1E0B /* LocationTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3687EB71E20B2E3009D1E0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F3687EB91E20B2E3009D1E0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F3687EBC1E20B2E3009D1E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3687EBE1E20B2E3009D1E0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3687EC11E20B2E3009D1E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +36,8 @@
 		F3687EC81E20B2E3009D1E0B /* LocationTrackingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationTrackingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3687ECC1E20B2E3009D1E0B /* LocationTrackingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTrackingTests.swift; sourceTree = "<group>"; };
 		F3687ECE1E20B2E3009D1E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3687EDC1E20B8B5009D1E0B /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		F3687EDE1E20B97C009D1E0B /* TabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +79,9 @@
 		F3687EB61E20B2E3009D1E0B /* LocationTracking */ = {
 			isa = PBXGroup;
 			children = (
+				F3687ED91E20B863009D1E0B /* ViewModel */,
+				F3687ED71E20B847009D1E0B /* VC */,
 				F3687EB71E20B2E3009D1E0B /* AppDelegate.swift */,
-				F3687EB91E20B2E3009D1E0B /* ViewController.swift */,
 				F3687EBB1E20B2E3009D1E0B /* Main.storyboard */,
 				F3687EBE1E20B2E3009D1E0B /* Assets.xcassets */,
 				F3687EC01E20B2E3009D1E0B /* LaunchScreen.storyboard */,
@@ -94,6 +97,22 @@
 				F3687ECE1E20B2E3009D1E0B /* Info.plist */,
 			);
 			path = LocationTrackingTests;
+			sourceTree = "<group>";
+		};
+		F3687ED71E20B847009D1E0B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				F3687EDC1E20B8B5009D1E0B /* TabViewController.swift */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		F3687ED91E20B863009D1E0B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F3687EDE1E20B97C009D1E0B /* TabViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +165,7 @@
 				TargetAttributes = {
 					F3687EB31E20B2E3009D1E0B = {
 						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					F3687EC71E20B2E3009D1E0B = {
 						CreatedOnToolsVersion = 8.1;
@@ -199,7 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3687EBA1E20B2E3009D1E0B /* ViewController.swift in Sources */,
+				F3687EDD1E20B8B5009D1E0B /* TabViewController.swift in Sources */,
+				F3687EDF1E20B97C009D1E0B /* TabViewModel.swift in Sources */,
 				F3687EB81E20B2E3009D1E0B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LocationTracking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LocationTracking;
@@ -349,6 +370,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LocationTracking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LocationTracking;
