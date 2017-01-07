@@ -9,6 +9,10 @@
 import UIKit
 
 class ThirdViewController: UIViewController {
+	
+	@IBOutlet weak var tableMoving: UITableView!
+	
+	var allMoves = [[String: Any]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +24,13 @@ class ThirdViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		
+		allMoves = (self.parent as! TabViewController).viewModel.allMoves
+		tableMoving.reloadData()
+	}
 
     /*
     // MARK: - Navigation
@@ -32,4 +42,21 @@ class ThirdViewController: UIViewController {
     }
     */
 
+}
+
+extension ThirdViewController : UITableViewDelegate, UITableViewDataSource {
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return allMoves.count
+	}
+	
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		let cell = tableView.dequeueReusableCell(withIdentifier: "MovingCell")
+		
+		var data = allMoves[indexPath.row]
+		
+		cell?.textLabel?.text = data["date"] as! String?
+		cell?.detailTextLabel?.text = String(format: "%f m", (data["distance"] as! Double))
+		
+		return cell!
+	}
 }

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BRYXBanner.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-LocationTracking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,12 +32,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>78A67033D1F354E9A91FE1B51E68545F</key>
+		<key>53F00218A0E44B5F8904B2F6A866CB3E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C6DE38558AFD5E34D79BA7E17E05CC77</key>
+		<key>5922F047B4A7957BC568CFBD8FDFD545</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F3C277F95EB7839FFF01C538365DE58F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

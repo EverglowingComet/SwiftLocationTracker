@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F3C277F95EB7839FFF01C538365DE58F'
-               BlueprintName = 'SwiftLocation'
+               BlueprintIdentifier = '5922F047B4A7957BC568CFBD8FDFD545'
+               BlueprintName = 'BRYXBanner'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SwiftLocation.framework'>
+               BuildableName = 'BRYXBanner.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

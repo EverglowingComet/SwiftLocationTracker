@@ -24,7 +24,7 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 	
-	func showLocation(address: String) {
+	func showLocation(_ address: String) {
 		lblLocation.text = address
 	}
     

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BRYXBanner
 
 class TabViewController: UITabBarController {
 	
@@ -17,13 +18,18 @@ class TabViewController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-		viewModel.startLocationTracking()
+		viewModel.showBanner = showBanner
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+	
+	func showBanner() {
+		let banner = Banner(title: "Alert", subtitle: "You have moved more than 50m.", backgroundColor: .green)
+		banner.show(view?.window, duration: 2.0)
+	}
 	
 
     /*

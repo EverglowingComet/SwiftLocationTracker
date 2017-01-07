@@ -9,18 +9,24 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+	
+	@IBOutlet weak var lblDistance: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+		(self.parent as! TabViewController).viewModel.showDistance = { [weak self] in return self?.showDistance }()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+	
+	func showDistance(_ address: String) {
+		lblDistance.text = address
+	}
 
     /*
     // MARK: - Navigation

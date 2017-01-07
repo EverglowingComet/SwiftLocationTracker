@@ -7,6 +7,7 @@ target 'LocationTracking' do
 
   # Pods for LocationTracking
   pod 'SwiftLocation', '>= 1.0.6'
+  pod 'BRYXBanner'
 
   target 'LocationTrackingTests' do
     inherit! :search_paths
